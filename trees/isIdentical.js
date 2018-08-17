@@ -18,5 +18,7 @@ let isIdentical = (root1, root2) => {
 let answers = [];
 answers.push(isIdentical(sampleTrees[0],sampleTrees[0]));
 answers.push(isIdentical(sampleTrees[0],sampleTrees[1]));
+answers.push(isIdentical(sampleTrees[0],sampleTrees[1]));
+answers.push(isIdentical(sampleTrees[0],sampleTrees[1]));
 
 printQAUtil.printAnswers(answers);

@@ -1,9 +1,7 @@
-let printQuestions = (ques) => {
+let printQuestions = (questions) => {
     let ele = document.getElementById('questions');
-    ques.forEach((que) => {
-        let arr = [];
-        formTree(que, arr, 0);
-        let html = `<p>${arr}</p>`;
+    questions.forEach((ans, index) => {
+        let html = `<p>${index+1}). ${ans}</p>`;
         ele.innerHTML += (html);
     });
 }
@@ -14,6 +12,11 @@ let printAnswers = (answers) => {
         let html = `<p>${index+1}). ${ans}</p>`;
         ele.innerHTML += (html);
     });
+}
+
+let printConsole = (html) => {
+    let ele = document.getElementById('console');
+    ele.innerHTML += html;
 }
 
 let formTree = (que, arr) => {
@@ -29,5 +32,6 @@ let formTree = (que, arr) => {
 
 export default {
     printQuestions, 
-    printAnswers
+    printAnswers,
+    printConsole
 }
