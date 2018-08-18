@@ -19,6 +19,12 @@ let printConsole = (html) => {
     ele.innerHTML += html;
 }
 
+let printQuesHeading = (link) => {
+    let ele = document.getElementById('quesHeading'),
+    a = ele.querySelector('a');
+    a.setAttribute('href',link);
+}
+
 let formTree = (que, arr) => {
     if (que == null){
         return;
@@ -33,5 +39,6 @@ let formTree = (que, arr) => {
 export default {
     printQuestions, 
     printAnswers,
-    printConsole
+    printConsole,
+    printQuesHeading
 }
