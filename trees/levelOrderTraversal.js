@@ -1,7 +1,7 @@
 // https://www.geeksforgeeks.org/level-order-tree-traversal/
 
 
-import printQAUtil from './printQA';
+import printQAUtil from '../printQA';
 import sampleTrees from './sampleTree';
 import preorder from './preorder';
 

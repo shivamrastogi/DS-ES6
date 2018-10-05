@@ -28,7 +28,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       hash: true,
-      template: './trees/index.html',
+      template: './index.html',
       filename: 'index.html'
     }),
     new WebpackMd5Hash()

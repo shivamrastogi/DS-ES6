@@ -1,5 +1,5 @@
 import sampleTrees from './sampleTree';
-import printQAUtil from './printQA';
+import printQAUtil from '../printQA';
 printQAUtil.printQuestions(sampleTrees);
 
 let height = (node) => {

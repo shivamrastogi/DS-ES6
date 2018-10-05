@@ -1,7 +1,7 @@
 // https://www.geeksforgeeks.org/given-a-binary-tree-print-out-all-of-its-root-to-leaf-paths-one-per-line/
 
 
-import printQAUtil from './printQA';
+import printQAUtil from '../printQA';
 import sampleTrees from './sampleTree';
 import preorder from './preorder';
 
